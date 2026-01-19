@@ -1,22 +1,23 @@
 {
   "name": "oddity-marketplace",
-  "description": "A curated marketplace of premium Claude Code plugins by Odd Omens",
+  "description": "A curated marketplace of Claude Code plugins by Odd Omens",
   "owner": {
     "name": "Odd Omens",
     "email": "support@oddomens.com",
-    "url": "https://oddomens.com"
+    "url": "https://github.com/OddOmens/oddity-marketplace"
   },
   "plugins": [
     {
       "name": "cmo",
       "source": "./plugins/cmo",
+      "category": "marketing",
       "description": "AI-powered Chief Marketing Officer that analyzes your codebase to create compelling marketing materials, strategic campaigns, and data-driven content",
       "version": "1.0.0",
       "author": {
         "name": "Odd Omens",
         "email": "support@oddomens.com"
       },
-      "homepage": "https://oddomens.com",
+      "homepage": "https://github.com/OddOmens/oddity-marketplace",
       "license": "MIT"
     }
   ]

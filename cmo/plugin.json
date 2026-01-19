@@ -1,0 +1,7 @@
+{
+    "name": "cmo",
+    "version": "1.0.0",
+    "description": "An AI-powered Chief Marketing Officer plugin for Claude Code that analyzes your codebase to generate compelling marketing content, strategic insights, and campaign ideas.",
+    "commands": "commands",
+    "skills": "skills"
+}

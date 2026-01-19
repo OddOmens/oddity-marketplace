@@ -16,7 +16,7 @@ Reset the CMO persona configuration back to the default organic, authentic, trus
 
 ## What This Command Does
 
-Resets `/Users/kadynwishcop/.claude/plugins/cmo/cmo-persona.json` to the default configuration:
+Resets `~/.claude/plugins/cmo/cmo-persona.json` to the default configuration:
 
 ```json
 {

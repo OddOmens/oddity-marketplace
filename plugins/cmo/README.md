@@ -128,7 +128,7 @@ Develops:
 
 ```bash
 cd /path/to/your-project
-claude --plugin-dir /Users/kadynwishcop/.claude/plugins/cmo
+claude --plugin-dir /path/to/plugins/cmo
 ```
 
 ### Option 2: Global Installation
@@ -137,7 +137,7 @@ claude --plugin-dir /Users/kadynwishcop/.claude/plugins/cmo
 
 ```bash
 mkdir -p ~/.claude/plugins
-cp -r /Users/kadynwishcop/.claude/plugins/cmo ~/.claude/plugins/
+cp -r /path/to/plugins/cmo ~/.claude/plugins/
 ```
 
 2. Run Claude Code with the plugin:

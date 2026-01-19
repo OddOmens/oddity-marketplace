@@ -7,7 +7,7 @@ The CMO plugin uses **project-specific personas** so each project can have its o
 ## File Locations
 
 ### Default Persona (Template)
-- **Location**: `/Users/kadynwishcop/.claude/plugins/cmo/cmo-persona.json`
+- **Location**: `~/.claude/plugins/cmo/cmo-persona.json`
 - **Purpose**: Default template used for all new projects
 - **When Used**: Fallback if project doesn't have its own persona
 

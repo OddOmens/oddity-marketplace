@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "cmo",
-      "source": "./cmo",
+      "source": "./plugins/cmo",
       "description": "AI-powered Chief Marketing Officer that analyzes your codebase to create compelling marketing materials, strategic campaigns, and data-driven content",
       "version": "1.0.0",
       "author": {

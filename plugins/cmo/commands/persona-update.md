@@ -12,15 +12,23 @@ Interactively update the CMO persona configuration through a guided question pro
 **IMPORTANT**: Before generating any output:
 1. Check if a `CMO/` folder exists in the current working directory
 2. If it does NOT exist, create it: `mkdir -p CMO`
-3. Log all changes to `CMO/persona-changes.md`
+3. Check if `CMO/cmo-persona.json` exists
+4. If not, copy default from `~/.claude/plugins/cmo/cmo-persona.json`
+
+## How Persona Works
+
+**Project-Specific Persona:**
+- Each project has its own persona in `CMO/cmo-persona.json`
+- Updates only affect the current project
+- Different projects can have different voices
 
 ## How This Command Works
 
 This is an **interactive command** that:
-1. Reads the current persona from `/Users/kadynwishcop/.claude/plugins/cmo/cmo-persona.json`
+1. Reads the current persona from `CMO/cmo-persona.json` (creates from default if missing)
 2. Asks targeted questions to understand what you want to change
 3. Updates only the specified aspects while preserving everything else
-4. Saves the updated persona and logs the change
+4. Saves the updated persona to `CMO/cmo-persona.json` and logs the change
 
 ## Interactive Flow
 
@@ -108,7 +116,7 @@ Apply these changes? (yes/no)
 ### Step 5: Save and Log
 
 If confirmed:
-1. Update `cmo-persona.json` with new values
+1. Update `CMO/cmo-persona.json` with new values (project-specific)
 2. Append to `CMO/persona-changes.md`:
 
 ```markdown
@@ -119,6 +127,8 @@ If confirmed:
 
 ### Current Full Persona
 [Complete persona summary after changes]
+
+Note: This persona is specific to this project.
 ```
 
 ## User Input
@@ -132,12 +142,12 @@ If arguments are provided, interpret them as the update request:
 
 ## Instructions
 
-1. Read current persona from `cmo-persona.json`
+1. Read current persona from `CMO/cmo-persona.json` (create from default if missing)
 2. Display current settings clearly
 3. Ask targeted questions based on what user wants to change
 4. Confirm changes before applying
-5. Save updated persona
+5. Save updated persona to `CMO/cmo-persona.json`
 6. Log changes to `CMO/persona-changes.md`
-7. Confirm what was updated
+7. Confirm what was updated and note it's project-specific
 
 Be conversational and helpful. Make it easy to tweak the persona incrementally.

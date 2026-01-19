@@ -22,7 +22,7 @@ Reset the CMO persona configuration back to the default organic, authentic, trus
 - Changes only affect the current project
 
 **Default Persona:**
-- Stored in plugin at `/Users/kadynwishcop/.claude/plugins/cmo/cmo-persona.json`
+- Stored in plugin at `~/.claude/plugins/cmo/cmo-persona.json`
 - Used as template when resetting
 
 ## What This Command Does
